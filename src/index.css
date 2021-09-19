@@ -19,6 +19,7 @@ body {
   width: 95%;
   max-width: 767px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

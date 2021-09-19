@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import {FaTimes} from 'react-icons';
+import Review from './components/Review'
 
 function App() {
   //Define State
@@ -17,12 +18,13 @@ function App() {
   }
   //Invoke Data Fetch
   useEffect(()=> {
-    fetchReviews()
+    fetchReviews();
   }, [])
 
   return (
     <main className="container">
       <h1>Hello React: REVIEWS</h1>
+      <Review />
     </main>
   );
 }
