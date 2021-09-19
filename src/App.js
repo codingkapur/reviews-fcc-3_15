@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react'
-import {FaTimes} from 'react-icons';
 import Review from './components/Review'
 
 function App() {
@@ -23,8 +22,10 @@ function App() {
 
   return (
     <main className="container">
-      <h1>Hello React: REVIEWS</h1>
-      <Review />
+      <h1 className="heading">Our Reviews:</h1>
+      {reviews.map((review) => {
+        return <Review key = {review.id} data={review}/>
+      })}
     </main>
   );
 }

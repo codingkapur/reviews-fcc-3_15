@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +13,71 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: 'Poppins', sans-serif;
+  background:linear-gradient(90deg, rgba(36, 149, 255, 0.685), rgba(160, 123, 247, 0.637))
 }
 
 .container {
-  border: 1px solid #123;
-  margin: 0 auto;
+  /* border: 1px solid #123; */
+  border-radius: 10px;
+  margin: 5rem auto;
   width: 95%;
   max-width: 767px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(75, 75, 75, 0.363);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.589);
+}
+.heading {
+  margin: 1.5rem 0 1rem 0;
+  text-transform: capitalize;
+}
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.review-author-photo {
+  border-radius:50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.review-author {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.review-job {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(255, 230, 91);
+}
+.review-text {
+  text-align: center;
+  margin: 1rem;
+}
+.nav-btns {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.btn {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(87, 140, 192);
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
 }
