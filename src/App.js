@@ -2,9 +2,9 @@ import {useEffect, useState} from 'react'
 import {FaTimes} from 'react-icons';
 
 function App() {
-
+  //Define State
   const [reviews, setReviews] = useState([])
-
+  //Fetch Data
   const getReviews = async () => {
     const res = await fetch('http://localhost:5000/reviews');
     const data = await res.json();
@@ -14,13 +14,11 @@ function App() {
   const fetchReviews = async () => {
     const reviewData = await getReviews();
     setReviews(reviewData);
-    console.log(reviews);
   }
-
+  //Invoke Data Fetch
   useEffect(()=> {
     fetchReviews()
   }, [])
-  console.log(reviews);
 
   return (
     <main className="container">
