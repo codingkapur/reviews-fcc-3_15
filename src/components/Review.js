@@ -34,7 +34,7 @@ function Review() {
 
       const surpriseMe = () => {
           setIndex(()=> {
-              return Math.floor(Math.random()*4);
+              return Math.floor(Math.random()* (reviews.length-1)+1);
           })
       }
     return <article className="review-container">
